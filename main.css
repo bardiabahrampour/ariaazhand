@@ -1,0 +1,63 @@
+/*
+Designed By: Bardia Bahrampour
+https://github.com/bardiabahrampour
+*/
+body, html{
+    font-family: 'BTraffic';
+    height: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+.mainbody::before{
+    content: "";
+    background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.623)),
+      url("img_2.jpg");
+    position: fixed;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(5px);
+    margin: -10px;                 /* remove the annoying white border*/
+}
+.mainpagetext{
+    background-color: rgba(61, 61, 61, 0);
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+.navbar{
+    background-color: #353535;
+    border-color: #353535;
+}
+#ab{
+    color: #d9d9d9;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #ffffff !important;
+    background-color: #3c6e71 !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  .active{
+      background-color: #284b63;
+      color: #ffffff;
+  }
+  .jumbotron{
+        padding: 240px 25px;
+        text-align: center;
+  }
