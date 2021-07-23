@@ -3,8 +3,11 @@ Designed By: Bardia Bahrampour
 https://github.com/bardiabahrampour
 */
 body, html{
-    font-family: 'BTraffic';
     height: 100%;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 *{
     box-sizing: border-box;
@@ -28,7 +31,6 @@ body, html{
 .mainpagetext{
     background-color: rgba(61, 61, 61, 0);
     color: white;
-    font-weight: bold;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -37,13 +39,19 @@ body, html{
     width: 80%;
     padding: 20px;
     text-align: center;
+    animation-name: appear;
+    animation-duration: 4s;
 }
 .navbar{
     background-color: #353535;
     border-color: #353535;
 }
 #ab{
-    color: #d9d9d9;
+    color: #d9d9d9;       /* English*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+#abe{
+    color: #d9d9d9; /* Persian*/
 }
 .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #ffffff !important;
@@ -57,7 +65,10 @@ body, html{
       background-color: #284b63;
       color: #ffffff;
   }
-  .jumbotron{
-        padding: 240px 25px;
-        text-align: center;
-  }
+h1{
+ size: 1300px;
+}
+@keyframes appear{
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
