@@ -1,6 +1,13 @@
 /*
 Designed By: Bardia Bahrampour
 https://github.com/bardiabahrampour
+
+Color Pallete:
+#353535 : Black
+#3c6e71 : Greenish Blue
+#ffffff : White
+#d9d9d9 : Gray
+#284b63 : Dark Blue
 */
 body, html{
     height: 100%;
@@ -8,6 +15,7 @@ body, html{
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+    background-color: #353535;
 }
 *{
     box-sizing: border-box;
@@ -29,6 +37,36 @@ body, html{
     margin: -10px;                 /* remove the annoying white border*/
 }
 .mainpagetext{
+    background-color: rgba(61, 61, 61, 0);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    animation-name: appear;
+    animation-duration: 4s;
+}
+.contbody::before{
+    content: "";
+    background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.623)),
+      url("img_1.jpg");
+    position: fixed;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(5px);
+    margin: -10px;                 /* remove the annoying white border*/
+}
+.conttext{
     background-color: rgba(61, 61, 61, 0);
     color: white;
     position: absolute;
@@ -67,7 +105,64 @@ body, html{
   }
 h1{
  size: 1300px;
+ direction: rtl;
 }
+h2{
+    direction: rtl;
+    color: whitesmoke;
+}
+h4{
+    direction: rtl;
+    color:whitesmoke;
+}
+h3{
+    direction: rtl;
+}
+.brand{
+    font-family: 'BTraffic';
+}
+.jumbotrontextleft{
+    direction: rtl;
+    padding: 0px 25px;
+}
+.jumbotrontext{
+    direction: rtl;
+    text-align: center;
+}
+.jumbotron{
+    /*background-color: #284b63;*/
+    /*color: #d9d9d9;*/
+    padding: 100px 25px;
+}
+.contactus_jumbo{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /*background-color: #3c6e71;*/
+}
+.contactus_contents{
+    padding-top: 25px;
+}
+.goals_panel{
+    background-color: #d9d9d9;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    animation-name: appear;
+    animation-duration: 2s;
+}
+.goals_col{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    animation-name: appear;
+    animation-duration: 1s;
+}
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+
 @keyframes appear{
     from {opacity: 0%;}
     to {opacity: 100%;}
