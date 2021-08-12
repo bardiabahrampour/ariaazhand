@@ -74,11 +74,13 @@ body, html{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    width: 80%;
+    height: auto;
+    width: auto;
     padding: 20px;
     text-align: center;
     animation-name: appear;
     animation-duration: 4s;
+    size: auto auto;
 }
 .navbar{
     background-color: #353535;
@@ -90,6 +92,11 @@ body, html{
 }
 #abe{
     color: #d9d9d9; /* Persian*/
+}
+.aboutus_panel{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
 }
 .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #ffffff !important;
@@ -162,7 +169,12 @@ h3{
     width: 100%;
     height: auto;
 }
-
+.aboutus-jumbo{
+    background-color: #3c6e71;
+    color: #d9d9d9;
+    width: 100%;
+    height: auto;
+}
 @keyframes appear{
     from {opacity: 0%;}
     to {opacity: 100%;}
